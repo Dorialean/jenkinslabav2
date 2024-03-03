@@ -8,7 +8,7 @@ pipeline {
    stages { 
        stage('Build') { 
            steps { 
-               sh 'cl -o hello hello.c'
+               sh 'gcc -o hello hello.c'
            } 
        } 
        stage('Archive') { 
